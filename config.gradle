@@ -1,0 +1,44 @@
+//
+ext {
+    username = "哈哈哈哈"
+    //生产 /开发  环境
+    isRelease = true
+    androidId = [
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.3",
+            applicationId    : "com.cw.myapplication",
+            minSdkVersion    : 19,
+            targetSdkVersion : 29,
+            versionCode      : 1,
+            versionName      : "1.0"
+
+    ]
+
+    appId = [
+            applicationId: "com.cw.myapplication",
+    ]
+
+    //生产 测试环境
+    url = [
+            debug  : "http://101.2.2.2:debug",
+            release: "http://101.2.2.20:release",
+    ]
+
+    appcompatLibVersion = "1.1.0"
+    coreKtxLibVersion = "1.2.0"
+    constraintlayoutLibVersion = "1.1.3"
+    junitLibVersion = "4.12"
+    extJunitLibVersion = "1.1.1"
+    espressoCoreLibVersion = "3.2.0"
+
+
+    dependenciesLib = [
+            "appcompat"       : "androidx.appcompat:appcompat:${appcompatLibVersion}",
+            "coreKtx"         : "androidx.core:core-ktx:${coreKtxLibVersion}",
+            "constraintlayout": "androidx.constraintlayout:constraintlayout:${constraintlayoutLibVersion}",
+            "junit"           : "junit:junit:${junitLibVersion}",
+            "extJunit"        : "androidx.test.ext:junit:${extJunitLibVersion}",
+            "espressoCore"    : "androidx.test.espresso:espresso-core:${espressoCoreLibVersion}"
+    ]
+
+}
