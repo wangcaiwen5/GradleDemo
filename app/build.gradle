@@ -21,6 +21,7 @@ android {
         versionName androidId.versionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
+        buildConfigField("boolean", "isRelease", String.valueOf(isRelease))
         // 开启分包
         multiDexEnabled true
         // 设置分包配置
@@ -39,7 +40,7 @@ android {
             //真机情况
             if (isRelease) {
                 abiFilters('armeabi', 'armeabi-v7a')
-            }else{
+            } else {
                 // 为了模拟器启动
                 abiFilters('x86', 'x86_64')
             }
@@ -160,4 +161,8 @@ dependencies {
     dependenciesLib.each { k, v -> implementation v }
 
     implementation project(":library")
+    if (isRelease) {
+        implementation project(":ordermodule")
+        implementation project(":personal_module")
+    }
 }

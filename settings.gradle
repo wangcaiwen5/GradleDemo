@@ -1,2 +1,2 @@
-include ':app', ':library'
+include ':app', ':library', ':ordermodule', ':personal_module', ':testmodule'
 rootProject.name='My Application'

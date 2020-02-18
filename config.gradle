@@ -1,8 +1,7 @@
 //
 ext {
-    username = "哈哈哈哈"
-    //生产 /开发  环境
-    isRelease = true
+    //生产 /开发  环境  用来切换组件化 集成化
+    isRelease = false
     androidId = [
             compileSdkVersion: 29,
             buildToolsVersion: "29.0.3",
@@ -16,6 +15,9 @@ ext {
 
     appId = [
             applicationId: "com.cw.myapplication",
+            app          : "com.cw.myapplication",
+            order        : "com.cw.ordermodule",
+            personal     : "com.cw.personal",
     ]
 
     //生产 测试环境
