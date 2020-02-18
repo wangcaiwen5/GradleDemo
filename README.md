@@ -1,2 +1,2 @@
 # GradleDemo
-gradle语法
+gradle语法  组件化项目部署
