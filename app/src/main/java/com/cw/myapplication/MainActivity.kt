@@ -5,7 +5,8 @@ import android.os.Bundle
 import androidx.constraintlayout.widget.ConstraintLayout
 
 /**
- * 组件化项目
+ *
+ * 组件化项目  测试
  */
 class MainActivity : AppCompatActivity() {
 
